@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body {
+    background-color: #222;
+    position: relative;
+    overflow: hidden;
+  }
+  .container {
+    height: 99vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  svg{
+    width: 50%;
+    height: 75%;
+    /* background-color: aqua; */
+  }
+  svg, svg path{
+    transition: fill ease 0.3s;
+  }
+  svg path:hover {
+    fill: #366CA3;
+  }
+  .move{
+    height: 400px;
+    min-width: 0px;
+    background-color: #fff;
+    position: absolute;
+    transform: translate(-50%, 10%);
+    scale: 0;
+    transition: all linear 0.3s;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .move .card{
+    height: 200px;
+    width: 200px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000;
+    flex-shrink: 0;
+  }
+  .card .card-image{
+    width: 90%;
+    height: 48%;
+    /* background-color: aqua; */
+  }
+  .card-image img{
+    height: 100%;
+    width: 100%; 
+    object-fit: cover;
+  }
+  .card .card-content{
+    width: 90%;
+    height: 48%;
+    /* background-color: violet; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .card-content p{
+    font-size: 12px;
+    color: #222;
+  }
