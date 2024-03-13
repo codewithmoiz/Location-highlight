@@ -28,11 +28,8 @@ body {
   svg, svg path{
     transition: fill ease 0.3s;
   }
-  svg path:hover {
-    fill: #366CA3;
-  }
   .move{
-    height: 400px;
+    min-height: 0px;
     min-width: 0px;
     background-color: #fff;
     position: absolute;
@@ -45,7 +42,7 @@ body {
   }
   .move .card{
     height: 200px;
-    width: 200px;
+    width: 150px;
     /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
@@ -76,4 +73,25 @@ body {
   .card-content p{
     font-size: 12px;
     color: #222;
+  }
+  #australia:hover{
+    fill: #F088B9;
+  }
+ #north_america:hover{
+    fill: #22ADE2;
+  }
+ #asia:hover{
+    fill: #95B93D;
+  }
+ #africa:hover{
+    fill: #F7A51B;
+  }
+ #europe:hover{
+    fill: #FFCF46;
+  }
+ #south_america:hover{
+    fill: #C7D72F;
+  }
+ #central-america:hover {
+    fill: #366CA3;
   }
